@@ -5,7 +5,7 @@
 	  );\n
 	\n
 	@end{}
-	  private final @{helper.getNonGenericType(ifaceFQCN)} delegate;\n
+	  private final @{helper.getSimpleName(ifaceFQCN)} delegate;\n
 	@foreach{typeParam:type.params}
 	  public final io.vertx.lang.rxjava.TypeArg<@{typeParam.name}> __typeArg_@{typeParam.index};\n
 	@end{}
